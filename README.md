@@ -7,12 +7,19 @@ _your zenodo badge here_
 Andrew D. Jones<sup>1,2,*</sup>, Deeksha Rastogi<sup>3</sup>, Pouya Vahmani<sup>1</sup>, Alyssa M. Stansfield<sup>4,5</sup>, Kevin A. Reed<sup>4</sup>, Travis Thurber<sup>6</sup>, Paul A. Ullrich<sup>7</sup>, Jennie Rice<sup>8</sup>
 
 <sup>1 </sup> Climate and Ecosystem Sciences Division, Lawrence Berkeley National Laboratory
+
 <sup>2 </sup> Energy and Resources Group, University of CA, Berkeley
+
 <sup>3 </sup> Computational Sciences and Engineering Division, Oak Ridge National Laboratory
+
 <sup>4 </sup> School of Marine and Atmospheric Sciences, Stony Brook University
+
 <sup>5 </sup> Department of Atmospheric Science, Colorado State University
+
 <sup>6 </sup> Earth Systems Science Division, Pacific Northwest National Laboratory
+
 <sup>7 </sup> Department of Land, Air, and Water Resources, University of CA, Davis
+
 <sup>8 </sup> Atmospheric Sciences and Global Change Division, Pacific Northwest National Laboratory
 
 
