@@ -50,6 +50,10 @@ Reference for each minted data source for your input data.  For example:
 
 Human, I.M. (2021). My input dataset name [Data set]. DataHub. https://doi.org/some-doi-number
 
+NCAR. WPS V4 Geographical Static Data. https://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html
+
+
+
 
 ### Output data
 Reference for each minted data source for your output data.  For example:
@@ -60,10 +64,10 @@ Human, I.M. (2021). My output dataset name [Data set]. DataHub. https://doi.org/
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
+| WPS | 4.0.1 | https://github.com/wrf-model/WPS | n/a |
+| WRF | 4.0.1 | https://github.com/wrf-model/WRF | n/a |
+| WRF | 4.2.1 | https://github.com/wrf-model/WRF | n/a |
 | TempestExtremes | 08401d5 | https://github.com/ClimateGlobalChange/tempestextremes | n/a |
-| model 1 | version | link to code repository | link to DOI dataset |
-| model 2 | version | link to code repository | link to DOI dataset |
-| component 1 | version | link to code repository | link to DOI dataset |
 
 
 ## Reproduce my experiment
