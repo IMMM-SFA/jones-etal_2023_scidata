@@ -46,11 +46,10 @@ Human, I.M. (2021, April 14). Project/repo:v0.1.0 (Version v0.1.0). Zenodo. http
 ## Data reference
 
 ### Input data
-Reference for each minted data source for your input data.  For example:
-
-Human, I.M. (2021). My input dataset name [Data set]. DataHub. https://doi.org/some-doi-number
 
 NCAR. WPS V4 Geographical Static Data. https://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html
+
+European Centre for Medium-Range Weather Forecasts. 2019, updated monthly. ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid) [Data set]. Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory. https://doi.org/10.5065/BH6N-5N20.
 
 
 
