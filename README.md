@@ -81,6 +81,8 @@ NASA Goddard Institute for Space Studies (NASA/GISS) (2020). NASA-GISS GISS-E2.1
 
 NASA Goddard Institute for Space Studies (NASA/GISS) (2020). NASA-GISS GISS-E2.1G model output prepared for CMIP6 ScenarioMIP ssp585. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.7460
 
+PRISM Climate Group, Oregon State University, https://prism.oregonstate.edu, data created 4 Feb 2014.
+
 Ridley, Jeff; Menary, Matthew; Kuhlbrodt, Till; Andrews, Martin; Andrews, Tim (2019). MOHC HadGEM3-GC31-LL model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.6109
 
 Shim, Sungbo; Lim, Yoon-Jin; Byun, Young-Hwa; Seo, Jeongbyn; Kwon, Sanghun; Kim, Byeong-Hyeon (2020). NIMS-KMA UKESM1.0-LL model output prepared for CMIP6 ScenarioMIP ssp245. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.8436
@@ -145,19 +147,19 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 
 | Figure | Script(s) | How to Run |
 | --- | --- | --- |
-| Fig. 1  | `TODO.py` | TODO |
-| Fig. 2  | `TODO.py` | TODO |
-| Fig. 3  | `TODO.py` | TODO |
-| Fig. 4  | `TODO.py` | TODO |
-| Fig. 5  | `TODO.py` | TODO |
-| Fig. 6  | `TODO.py` | TODO |
-| Fig. 7  | `TODO.py` | TODO |
+| Fig. 1  | `Figure1_delta.ncl`<br/>`Figure1_tas.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run each script, generating a subplot.  |
+| Fig. 2  | `Figure2_historical.ncl`<br/>`Figure2_future1.ncl`<br/>`Figure2_future2.ncl` | " |
+| Fig. 3  | `Figure3.ncl` | " |
+| Fig. 4  | `Figure4.ncl` | " |
+| Fig. 5  | `Figure5_pr.ncl`<br/>`Figure5_tmax.ncl` | First, generate monthly average precipitation from the WRF output data as NetCDF, then use the NCL scripts to generate the figure. The script also relies on access to monthly average ERA5 and PRISM data which can be downloaded from the references. |
+| Fig. 6  | `t95.csh`<br/>`p95.csh`<br/>`Figure6_p95bias.ncl`<br/>`Figure6_t95bias.ncl` | The cshell scripts can be used to calculate the 95th percentile temperature and pressure values. The NCL script uses these to produce the figure. |
+| Fig. 7  | `Figure7.py`<br/>`Figure7_prdata.ncl`<br/>`Figure7_tmaxdata.ncl` | Use Python to the script, which references data files which are subsets of precipitation and temperature in particular cities. These data files are also provided in the figures directory, or can be generated using the NCL scripts. |
 | Fig. 8  | `TODO.py` | TODO |
 | Fig. 9  | `TODO.py` | TODO |
-| Fig. 10 | `TODO.py` | TODO |
-| Fig. 11 | `TODO.py` | TODO |
-| Fig. 12 | `TODO.py` | TODO |
-| Fig. 13 | `TODO.py` | TODO |
-| Fig. 14 | `TODO.py` | TODO |
+| Fig. 10 | `Figure10.ncl` | " |
+| Fig. 11 | `Figure11.ncl` | " |
+| Fig. 12 | `Figure 12.xlsx` | This figure was generated in the Excel worksheet, using data points derived from the raw output. |
+| Fig. 13 | `Figure13.ncl` | " |
+| Fig. 14 | `make_figure_14.py` | Use Python run the script, which references the provided data aggregations. These aggregations were derived from the raw GCM and raw output data.  |
 
 
