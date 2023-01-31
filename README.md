@@ -120,7 +120,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
 
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
-| TempestExtremes | 08401d5 | https://github.com/ClimateGlobalChange/tempestextremes | n/a |
+| TempestExtremes | [08401d5](https://github.com/ClimateGlobalChange/tempestextremes/tree/08401d5ed96fee1def58419479d0d0e2cfa7a703) | https://github.com/ClimateGlobalChange/tempestextremes | n/a |
 | WPS | 4.0.1 | https://github.com/wrf-model/WPS | n/a |
 | WRF | 4.0.1 | https://github.com/wrf-model/WRF | n/a |
 | WRF | 4.2.1 | https://github.com/wrf-model/WRF | n/a |
@@ -150,18 +150,18 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 | Figure | Script(s) | How to Run |
 | --- | --- | --- |
 | Fig. 1  | `Figure1_delta.ncl`<br/>`Figure1_tas.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run each script, generating a subplot.  |
-| Fig. 2  | `Figure2_historical.ncl`<br/>`Figure2_future1.ncl`<br/>`Figure2_future2.ncl` | " |
-| Fig. 3  | `Figure3.ncl` | " |
-| Fig. 4  | `Figure4.ncl` | " |
+| Fig. 2  | `Figure2_historical.ncl`<br/>`Figure2_future1.ncl`<br/>`Figure2_future2.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run each script, generating a subplot. |
+| Fig. 3  | `Figure3.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run the script. |
+| Fig. 4  | `Figure4.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run the script. |
 | Fig. 5  | `Figure5_pr.ncl`<br/>`Figure5_tmax.ncl` | First, generate monthly average precipitation from the WRF output data as NetCDF, then use the NCL scripts to generate the figure. The script also relies on access to monthly average ERA5 and PRISM data which can be downloaded from the references. |
 | Fig. 6  | `t95.csh`<br/>`p95.csh`<br/>`Figure6_p95bias.ncl`<br/>`Figure6_t95bias.ncl` | The cshell scripts can be used to calculate the 95th percentile temperature and precipitation values. The NCL script uses these to produce the figure. |
 | Fig. 7  | `Figure7.py`<br/>`Figure7_prdata.ncl`<br/>`Figure7_tmaxdata.ncl` | Use Python to run the script, which references data files that are subsets of precipitation and temperature in particular cities. These data files are also provided in the figures directory, or can be generated using the NCL scripts. |
-| Fig. 8  | `TODO.py` | TODO |
-| Fig. 9  | `TODO.py` | TODO |
-| Fig. 10 | `Figure10.ncl` | " |
-| Fig. 11 | `Figure11.ncl` | " |
+| Fig. 8  | `tempest/plot_Figure8.py` | Follow the steps in the [figures/tempest](/figures/tempest) README.md |
+| Fig. 9  | `tempest/plot_Figure9.py` | Follow the steps in the [figures/tempest](/figures/tempest) README.md |
+| Fig. 10 | `Figure10.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run the script. |
+| Fig. 11 | `Figure11.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run the script. |
 | Fig. 12 | `Figure 12.xlsx` | This figure was generated in the Excel worksheet, using data points derived from the raw output. |
-| Fig. 13 | `Figure13.ncl` | " |
+| Fig. 13 | `Figure13.ncl` | Use the [NCAR command language](https://www.ncl.ucar.edu/) (NCL) to run the script. |
 | Fig. 14 | `make_figure_14.py` | Use Python to run the script, which references the provided data aggregations. These aggregations were derived from the raw GCM and raw output data.  |
 
 

@@ -20,25 +20,11 @@ UQSTR=SSP585_HOT_FAR
 TEMPESTEXTREMESDIR=/global/homes/a/alyssas/tempestextremes_20211109_NFEhack/
 
 #name of file that will contain TC tracks
-TRAJFILENAME=trajectories.txt.${UQSTR}_17min_noedges
+TRAJFILENAME=trajectories.txt.${UQSTR}
 
 #Add names of WRF output files with data needed to track TCs to text file
 rm tracking_files.txt
 ls /global/project/projectdirs/m2637/TGW/CONUS_TGW_WRF_${UQSTR}/aux/*.nc > tracking_files.txt
-
-#Add names of WRF output files containing 6-hourly precipitation to text file
-rm precip_file_list.txt
-rm precip_output_files.txt
-ls /global/project/projectdirs/m2637/TGW/CONUS_TGW_WRF_${UQSTR}/PRECT_6h/*.nc > precip_file_list.txt
-PRECIPFILES=`ls /global/project/projectdirs/m2637/TGW/CONUS_TGW_WRF_${UQSTR}/PRECT_6h/*.nc`
-
-#Create text file with desired names of output files that will contain TC-filtered precipitation
-for g in $PRECIPFILES
-do
-  filename=${g}
-  just_filename=`basename $g`
-  echo "$SCRATCH/wrf_filtered/${UQSTR}/${just_filename}_5deg_filtered.nc" >> precip_output_files.txt
-done
 
 
 #DetectNodes and Stitchnodes settings
@@ -66,8 +52,5 @@ cat DN_files/out* > wrfout_d01_DN.txt
 
 # Stitch candidate cyclones together
 ${TEMPESTEXTREMESDIR}/bin/StitchNodes --in_fmt "lon,lat,slp,wind" --range ${SN_TRAMERRA2NGE} --mintime ${SN_TRAJMINTIME} --maxgap ${SN_TRAJMAXGAP} --in wrfout_d01_DN.txt --out ${TRAJFILENAME} --threshold "wind,>=,${SN_MINWIND},${SN_MINLEN};lat,<=,35,first"
-
-#extract TC precip using a set radius of 5 degrees around the TC center
-srun -n 32 ${TEMPESTEXTREMESDIR}/bin/NodeFileFilter --in_nodefile ${TRAJFILENAME} --in_fmt "lon,lat,slp,wind" --in_data_list "precip_file_list.txt" --out_data_list "precip_output_files.txt" --bydist 5.0 --var "PRECT" --maskvar "mask" --latname "XLAT" --lonname "XLONG"
 
 exit
