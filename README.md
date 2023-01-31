@@ -42,7 +42,7 @@ Skamarock, W. C., J. B. Klemp, J. Dudhia, D. O. Gill, Z. Liu, J. Berner, W. Wang
 
 Ullrich, P.A., C.M. Zarzycki, E.E. McClenny, M.C. Pinheiro, A.M. Stansfield and K.A. Reed (2021) "TempestExtremes v2.1: A community framework for feature detection, tracking and analysis in large datasets" Geosci. Model. Dev. 14, pp. 5023–5048, https://doi.org/10.5194/gmd-14-5023-2021.
 
-Vahmani, Pouya, Rastogi, Deeksha, & Thurber, Travis. (2021). TGW WRF Workflow (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.5748047 TODO update version and DOI
+Vahmani, Pouya, Rastogi, Deeksha, & Thurber, Travis. (2021). TGW WRF Historical Workflow (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.5748047. GitHub: https://github.com/IMMM-SFA/wrf_historical. TODO update version and DOI
 
 
 ## Data reference
@@ -74,6 +74,8 @@ John, Jasmin G; Blanton, Chris; McHugh, Colleen; Radhakrishnan, Aparna; Rand, Kr
 John, Jasmin G; Blanton, Chris; McHugh, Colleen; Radhakrishnan, Aparna; Rand, Kristopher; Vahlenkamp, Hans; Wilson, Chandin; Zadeh, Niki T.; Dunne, John P.; Dussin, Raphael; Horowitz, Larry W.; Krasting, John P.; Lin, Pu; Malyshev, Sergey; Naik, Vaishali; Ploshay, Jeffrey; Shevliakova, Elena; Silvers, Levi; Stock, Charles; Winton, Michael; Zeng, Yujin (2018). NOAA-GFDL GFDL-ESM4 model output prepared for CMIP6 ScenarioMIP ssp585. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.8706
 
 Krasting, John P.; John, Jasmin G; Blanton, Chris; McHugh, Colleen; Nikonov, Serguei; Radhakrishnan, Aparna; Rand, Kristopher; Zadeh, Niki T.; Balaji, V; Durachta, Jeff; Dupuis, Christopher; Menzel, Raymond; Robinson, Thomas; Underwood, Seth; Vahlenkamp, Hans; Dunne, Krista A.; Gauthier, Paul PG; Ginoux, Paul; Griffies, Stephen M.; Hallberg, Robert; Harrison, Matthew; Hurlin, William; Malyshev, Sergey; Naik, Vaishali; Paulot, Fabien; Paynter, David J; Ploshay, Jeffrey; Reichl, Brandon G; Schwarzkopf, Daniel M; Seman, Charles J; Silvers, Levi; Wyman, Bruce; Zeng, Yujin; Adcroft, Alistair; Dunne, John P.; Dussin, Raphael; Guo, Huan; He, Jian; Held, Isaac M; Horowitz, Larry W.; Lin, Pu; Milly, P.C.D; Shevliakova, Elena; Stock, Charles; Winton, Michael; Wittenberg, Andrew T.; Xie, Yuanyu; Zhao, Ming (2018). NOAA-GFDL GFDL-ESM4 model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.8597
+
+Meinshausen, Malte; Vogel, Elisabeth (2016). input4MIPs.UoM.GHGConcentrations.CMIP.UoM-CMIP-1-2-0.Earth System Grid Federation. https://doi.org/10.22033/ESGF/input4MIPs.1118
 
 NASA Goddard Institute for Space Studies (NASA/GISS) (2018). NASA-GISS GISS-E2.1G model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.7127
 
@@ -126,7 +128,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
 
 ## Reproduce my experiment
 
-1. Follow the steps outlined in [TGW WRF Workflow](https://github.com/IMMM-SFA/wrf_historical) to prepare the input data and run the WRF model for each simulation year in the historical period.
+1. Follow the steps outlined in [TGW WRF Historical Workflow](https://github.com/IMMM-SFA/wrf_historical) to prepare the input data and run the WRF model for each simulation year in the historical period.
   * Note that this workflow is tailored to the NERSC supercomputer's KNL/Haswell nodes. Use on other hardware will require modifications. The [WRF Users' Page](https://www2.mmm.ucar.edu/wrf/users/) can be used as a reference for configuring and running the various tools on different systems.
 2. Download the CMIP6 files listed in `cmip6_file_list.txt` from [WCRP CMIP6](https://esgf-node.llnl.gov/projects/cmip6/). These files will be used to calculate the temperature deltas to apply to the future scenarios. Additional input will be the historical meteorology files produced during step #1. Output will be new meteorology files with temperature delta applied for each future scenario. Run the following scripts to generate the deltas, updating the file paths as necessary to reference your downloaded files:
   * `deltas/data_preprocessing.sh`
@@ -137,7 +139,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
   * `deltas/calc_moving_avg_var3d.sh`
   * `deltas/calc_delta_nearfuture.sh`
   * `deltas/calc_delta_farfuture.sh`
-  * `deltas/delta-interpolation.ncl`
+  * `deltas/delta-interpolation.ncl` - interpolates the CMIP6 deltas to the WRF domain and adds to the meteorology files
 3. TODO GHG updates
 4. Run WRF simulations for each year and scenario using the new data from steps #2 and #3, adapting the workflow from #1 to use the new files.
 
