@@ -57,7 +57,7 @@ Bentsen, Mats; Oliviè, Dirk Jan Leo; Seland, Øyvind; Toniazzo, Thomas; Gjermun
 
 Byun, Young-Hwa (2020). NIMS-KMA UKESM1.0-LL model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.8379
 
-NCAR. WPS V4 Geographical Static Data. https://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html
+Chen_et_al_2008_JGR_Gauge_Algo.pdf Chen, M., W. Shi, P. Xie, V. B. S. Silva, V E. Kousky, R. Wayne Higgins, and J. E. Janowiak (2008), Assessing objective techniques for gauge-based analyses of global daily precipitation, J. Geophys. Res., 113, D04110, doi:10.1029/2007JD009132.
 
 European Centre for Medium-Range Weather Forecasts. 2019, updated monthly. ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid) [Data set]. Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory. https://doi.org/10.5065/BH6N-5N20.
 
@@ -83,6 +83,8 @@ NASA Goddard Institute for Space Studies (NASA/GISS) (2020). NASA-GISS GISS-E2.1
 
 NASA Goddard Institute for Space Studies (NASA/GISS) (2020). NASA-GISS GISS-E2.1G model output prepared for CMIP6 ScenarioMIP ssp585. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.7460
 
+NCAR. WPS V4 Geographical Static Data. https://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html
+
 PRISM Climate Group, Oregon State University, https://prism.oregonstate.edu, data created 4 Feb 2014.
 
 Ridley, Jeff; Menary, Matthew; Kuhlbrodt, Till; Andrews, Martin; Andrews, Tim (2019). MOHC HadGEM3-GC31-LL model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.6109
@@ -104,6 +106,8 @@ Voldoire, Aurore (2019). CNRM-CERFACS CNRM-CM6-1-HR model output prepared for CM
 Voldoire, Aurore (2019). CNRM-CERFACS CNRM-CM6-1-HR model output prepared for CMIP6 ScenarioMIP ssp245. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.4190
 
 Voldoire, Aurore (2019). CNRM-CERFACS CNRM-CM6-1-HR model output prepared for CMIP6 ScenarioMIP ssp585. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.4225
+
+Xie_et_al_2007_JHM_EAG.pdf Xie, P., A. Yatagai, M. Chen, T. Hayasaka, Y. Fukushima, C. Liu, and S. Yang (2007), A gauge-based analysis of daily precipitation over East Asia, J. Hydrometeorol., 8, 607. 626.
 
 Ziehn, Tilo; Chamberlain, Matthew; Lenton, Andrew; Law, Rachel; Bodman, Roger; Dix, Martin; Wang, Yingping; Dobrohotoff, Peter; Srbinovsky, Jhan; Stevens, Lauren; Vohralik, Peter; Mackallah, Chloe; Sullivan, Arnold; O'Farrell, Siobhan; Druken, Kelsey (2019). CSIRO ACCESS-ESM1.5 model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.4272
 
