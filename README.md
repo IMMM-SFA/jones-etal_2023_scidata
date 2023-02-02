@@ -1,4 +1,4 @@
-_your zenodo badge here_
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7599056.svg)](https://doi.org/10.5281/zenodo.7599056)
 
 # jones-etal\_2023\_scidata
 
