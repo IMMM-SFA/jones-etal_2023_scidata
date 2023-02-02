@@ -42,7 +42,7 @@ Skamarock, W. C., J. B. Klemp, J. Dudhia, D. O. Gill, Z. Liu, J. Berner, W. Wang
 
 Ullrich, P.A., C.M. Zarzycki, E.E. McClenny, M.C. Pinheiro, A.M. Stansfield and K.A. Reed (2021) "TempestExtremes v2.1: A community framework for feature detection, tracking and analysis in large datasets" Geosci. Model. Dev. 14, pp. 5023–5048, https://doi.org/10.5194/gmd-14-5023-2021.
 
-Vahmani, Pouya, Rastogi, Deeksha, & Thurber, Travis. (2021). TGW WRF Historical Workflow (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.5748047. GitHub: https://github.com/IMMM-SFA/wrf_historical. TODO update version and DOI
+Vahmani, Pouya, Rastogi, Deeksha, & Thurber, Travis. (2021). TGW WRF Historical Workflow (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.7598973. GitHub: https://github.com/IMMM-SFA/wrf_historical.
 
 
 ## Data reference
@@ -76,6 +76,10 @@ John, Jasmin G; Blanton, Chris; McHugh, Colleen; Radhakrishnan, Aparna; Rand, Kr
 Krasting, John P.; John, Jasmin G; Blanton, Chris; McHugh, Colleen; Nikonov, Serguei; Radhakrishnan, Aparna; Rand, Kristopher; Zadeh, Niki T.; Balaji, V; Durachta, Jeff; Dupuis, Christopher; Menzel, Raymond; Robinson, Thomas; Underwood, Seth; Vahlenkamp, Hans; Dunne, Krista A.; Gauthier, Paul PG; Ginoux, Paul; Griffies, Stephen M.; Hallberg, Robert; Harrison, Matthew; Hurlin, William; Malyshev, Sergey; Naik, Vaishali; Paulot, Fabien; Paynter, David J; Ploshay, Jeffrey; Reichl, Brandon G; Schwarzkopf, Daniel M; Seman, Charles J; Silvers, Levi; Wyman, Bruce; Zeng, Yujin; Adcroft, Alistair; Dunne, John P.; Dussin, Raphael; Guo, Huan; He, Jian; Held, Isaac M; Horowitz, Larry W.; Lin, Pu; Milly, P.C.D; Shevliakova, Elena; Stock, Charles; Winton, Michael; Wittenberg, Andrew T.; Xie, Yuanyu; Zhao, Ming (2018). NOAA-GFDL GFDL-ESM4 model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.8597
 
 Meinshausen, Malte; Vogel, Elisabeth (2016). input4MIPs.UoM.GHGConcentrations.CMIP.UoM-CMIP-1-2-0.Earth System Grid Federation. https://doi.org/10.22033/ESGF/input4MIPs.1118
+
+Meinshausen, Malte; Nicholls, Zebedee R. J. (2018). UoM-MESSAGE-GLOBIOM-ssp245-1-2-1 GHG concentrations. Earth System Grid Federation. https://doi.org/10.22033/ESGF/input4MIPs.9866
+
+Meinshausen, Malte; Nicholls, Zebedee R. J. (2018). UoM-REMIND-MAGPIE-ssp585-1-2-1 GHG concentrations. Earth System Grid Federation. https://doi.org/10.22033/ESGF/input4MIPs.9868
 
 NASA Goddard Institute for Space Studies (NASA/GISS) (2018). NASA-GISS GISS-E2.1G model output prepared for CMIP6 CMIP historical. Earth System Grid Federation. doi:https://doi.org/10.22033/ESGF/CMIP6.7127
 
@@ -144,8 +148,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
   * `deltas/calc_delta_nearfuture.sh`
   * `deltas/calc_delta_farfuture.sh`
   * `deltas/delta-interpolation.ncl` - interpolates the CMIP6 deltas to the WRF domain and adds to the meteorology files
-3. TODO GHG updates
-4. Run WRF simulations for each year and scenario using the new data from steps #2 and #3, adapting the workflow from #1 to use the new files.
+4. Run WRF simulations for each year and scenario using the new data from steps #2 and #3, adapting the workflow from #1 to use the new files. During the step that creates the GHG concentrations, replace `GHG_for_WRF_historical.m` with `GHG_for_WRF_SSP245_v121.m` or `GHG_for_WRF_SSP585_v121.m` based on the future scenario being run.
 
 
 ## Reproduce my figures
