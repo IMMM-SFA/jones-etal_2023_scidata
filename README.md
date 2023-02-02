@@ -138,7 +138,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
 
 1. Follow the steps outlined in [TGW WRF Historical Workflow](https://github.com/IMMM-SFA/wrf_historical) to prepare the input data and run the WRF model for each simulation year in the historical period.
   * Note that this workflow is tailored to the NERSC supercomputer's KNL/Haswell nodes. Use on other hardware will require modifications. The [WRF Users' Page](https://www2.mmm.ucar.edu/wrf/users/) can be used as a reference for configuring and running the various tools on different systems.
-2. Download the CMIP6 files listed in `cmip6_file_list.txt` from [WCRP CMIP6](https://esgf-node.llnl.gov/projects/cmip6/). These files will be used to calculate the temperature deltas to apply to the future scenarios. Additional input will be the historical meteorology files produced during step #1. Output will be new meteorology files with temperature delta applied for each future scenario. Run the following scripts to generate the deltas, updating the file paths as necessary to reference your downloaded files:
+1. Download the CMIP6 files listed in `cmip6_file_list.txt` from [WCRP CMIP6](https://esgf-node.llnl.gov/projects/cmip6/). These files will be used to calculate the temperature deltas to apply to the future scenarios. Additional input will be the historical meteorology files produced during step #1. Output will be new meteorology files with temperature delta applied for each future scenario. Run the following scripts to generate the deltas, updating the file paths as necessary to reference your downloaded files:
   * `deltas/data_preprocessing.sh`
   * `deltas/calculate_ensemble_mean.sh`
   * `deltas/calculate_modelmean_ColdModels.sh`
@@ -148,7 +148,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
   * `deltas/calc_delta_nearfuture.sh`
   * `deltas/calc_delta_farfuture.sh`
   * `deltas/delta-interpolation.ncl` - interpolates the CMIP6 deltas to the WRF domain and adds to the meteorology files
-4. Run WRF simulations for each year and scenario using the new data from steps #2 and #3, adapting the workflow from #1 to use the new files. During the step that creates the GHG concentrations, replace `GHG_for_WRF_historical.m` with `GHG_for_WRF_SSP245_v121.m` or `GHG_for_WRF_SSP585_v121.m` based on the future scenario being run.
+1. Run WRF simulations for each year and scenario using the new data from step #2, adapting the workflow from #1 to use the new meteorology files. During the step that creates the GHG concentrations file, replace the script `GHG_for_WRF_historical.m` with `GHG_for_WRF_SSP245_v121.m` or `GHG_for_WRF_SSP585_v121.m` based on the future scenario being run.
 
 
 ## Reproduce my figures
