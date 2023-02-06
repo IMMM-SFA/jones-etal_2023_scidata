@@ -2,7 +2,7 @@
 
 # jones-etal\_2023\_scidata
 
-**Climate projections for the continental United States based on thermodynamic modification of historic weather**
+**Continental United States climate projections based on thermodynamic modification of historical weather**
 
 Andrew D. Jones<sup>1,2,*</sup>, Deeksha Rastogi<sup>3</sup>, Pouya Vahmani<sup>1</sup>, Alyssa M. Stansfield<sup>4,5</sup>, Kevin A. Reed<sup>4</sup>, Travis Thurber<sup>6</sup>, Paul A. Ullrich<sup>7</sup>, Jennie Rice<sup>8</sup>
 
@@ -28,7 +28,19 @@ Andrew D. Jones<sup>1,2,*</sup>, Deeksha Rastogi<sup>3</sup>, Pouya Vahmani<sup>
 
 ## Abstract
 
-Regional climate models can be used to examine how past weather events might unfold under different climate conditions by simulating analogue versions of those events with modified thermodynamic conditions (i.e., warming signals).  Here, we apply this approach by dynamically downscaling a 40-year sequence of past weather from 1980-2019 driven by atmospheric re-analysis, then repeat this 40-year sequence a total of 8 times with additional time-evolving thermodynamic warming signals that follow 4 80-year future warming trajectories from 2020-2099.  Warming signals follow two emission scenarios (SSP585 and SSP245),  and are derived from two groups of global climate models based on whether they exhibit high or low climate sensitivity.  The resulting dataset, which contains 25 hourly and over 200 3-hourly variables at 12km spatial resolution, can be used to track a plausible range of future climate conditions in direct reference to previously observed weather and enables a systematic exploration of the ways in which thermodynamic change influences the characteristics of extreme events.
+Regional climate models can be used to examine how past weather events might unfold
+under different climate conditions by simulating analogue versions of those events with
+modified thermodynamic conditions (i.e., warming signals). Here, we apply this approach by
+dynamically downscaling a 40-year sequence of past weather from 1980-2019 driven by
+atmospheric re-analysis, and then repeating this 40-year sequence a total of 8 times using a
+range of time-evolving thermodynamic warming signals that follow 4 80-year future
+warming trajectories from 2020-2099. Warming signals follow two emission scenarios
+(SSP585 and SSP245) and are derived from two groups of global climate models based on
+whether they exhibit relatively high or low climate sensitivity. The resulting dataset, which
+contains 25 hourly and over 200 3-hourly variables at 12km spatial resolution, can be used to
+examine a plausible range of future climate conditions in direct reference to previously
+observed weather and enables a systematic exploration of the ways in which thermodynamic
+change influences the characteristics of extreme events.
 
 
 ## Journal reference
