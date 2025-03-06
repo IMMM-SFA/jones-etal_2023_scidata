@@ -45,8 +45,7 @@ change influences the characteristics of extreme events.
 
 ## Journal reference
 
-tbd
-
+Jones, A.D., Rastogi, D., Vahmani, P. et al. Continental United States climate projections based on thermodynamic modification of historical weather. Sci Data 10, 664 (2023). https://doi.org/10.1038/s41597-023-02485-5
 
 ## Code reference
 
